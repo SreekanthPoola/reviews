@@ -8,7 +8,9 @@
   <link  href="css/styles.css" rel="stylesheet" type="text/css">
   <link  href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" rel="stylesheet">
   <meta content="width=device-width,initial-scale=1.0" name="viewport">
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'>
+
+  </script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet'>
   <title>Restaurant Info</title>
 </head>
@@ -17,31 +19,29 @@
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
-    <nav >
+    <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
-       <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" aria-label="breadcrumb" class="breadcrumb">
+    </nav>
+    <!-- Beginning breadcrumb -->
+    <ul id="breadcrumb" aria-label="breadcrumd">
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
-    </nav>
     <!-- End nav -->
   </header>
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main id="maincontent" role="application">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map" role='application'></div>
+      <div id="map" role="application" aria-label="list"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
       <div class="leftchild">
-      <h2 id="restaurant-name"></h2>
-        <img id="restaurant-img">
-      </div>
+      <h2 id="restaurant-name"></h2><img alt="restaurant-image" id="restaurant-img"></div>
       <div class="rightchild">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
